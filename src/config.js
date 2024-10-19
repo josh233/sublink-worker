@@ -489,19 +489,19 @@ export const CLASH_CONFIG = {
                 enable: true,
 		'force-dns-mapping': true,
 		'override-destination': true,
-		QUIC: {ports: "'[' 443 ']'"},
-		TLS: {ports: "'['443, 8443']'"},
-		HTTP: {ports: "'['80, 8080-8880']'"}
+		QUIC: {ports: '[' 443 ']'},
+		TLS: {ports: '['443, 8443']'},
+		HTTP: {ports: '['80, 8080-8880']'}
 	},
 	'geodata-mode': true,
 	'geodata-loader': 'memconservative',
 	'geo-auto-update': true,
 	'geo-update-interval': 24,
 	'geox-url': {[
-		{geoip: '"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"'},
-	        {geosite: '"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"'},
-                {mmdb: '"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"'},
-                {asn: '"https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"'}
+		{geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"},
+	        {geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"},
+                {mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"},
+                {asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"}
 	]},
 	dns: {
 		enable: true,

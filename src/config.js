@@ -483,7 +483,7 @@ export const CLASH_CONFIG = {
 	'allow-lan': true,
 	'bind-address': "*",
 	mode: 'Rule',
-	ipv6: true
+	ipv6: true,
 	'log-level': 'info',
 	dns: {
 		enable: true,

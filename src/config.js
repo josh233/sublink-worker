@@ -485,7 +485,7 @@ export const CLASH_CONFIG = {
 	mode: 'Rule',
 	ipv6: true,
 	'log-level': 'info',
-	'external-controller': 127.0.0.1:9191,
+	'external-controller': {127.0.0.1:9191},
 	secret: "",
 	'global-client-fingerprint': chrome,
 	sniffer: {

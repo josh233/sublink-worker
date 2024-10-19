@@ -487,8 +487,8 @@ export const CLASH_CONFIG = {
 	'log-level': 'info',
 	dns: {
 		enable: true,
-		nameserver: ['119.29.29.29', '223.5.5.5'],
-		fallback: ['8.8.8.8', '8.8.4.4', 'tls://1.0.0.1:853', 'tls://dns.google:853'],
+		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
+		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
 	},
 	proxies: [],
 	'proxy-groups': [],

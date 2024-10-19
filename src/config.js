@@ -485,7 +485,6 @@ export const CLASH_CONFIG = {
 	mode: 'Rule',
 	ipv6: true,
 	'log-level': 'info',
-	'global-client-fingerprint': chrome,
 	sniffer: {
                 enable: true,
 		'force-dns-mapping': true,

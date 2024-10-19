@@ -495,11 +495,6 @@ export const CLASH_CONFIG = {
 	'geodata-loader': 'standard',
 	'geo-auto-update': true,
 	'geo-update-interval': 24,
-	'sniffer': [
-		"QUIC": {"ports": "'[' 443 ']'"},
-		"TLS": {"ports": "'['443, 8443']'"},
-		"HTTP": {"ports": "'['80, 8080-8880']'"}
-	],
 	'dns': {
 		"enable": true,
 		'enhanced-mode': 'redir-host',

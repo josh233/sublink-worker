@@ -1,5 +1,5 @@
-export const SITE_RULE_SET_BASE_URL = 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/';
-export const IP_RULE_SET_BASE_URL = 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/';
+export const SITE_RULE_SET_BASE_URL = 'https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/';
+export const IP_RULE_SET_BASE_URL = 'https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/';
 // Custom rules
 export const CUSTOM_RULES = [];
 // Unified rule structure
@@ -240,7 +240,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
     type: 'remote',
     format: 'binary',
     url: `${SITE_RULE_SET_BASE_URL}${SITE_RULE_SETS[rule]}`,
-    download_detour: '⚡ 自动选择'
+    download_detour: '🚀 节点选择'
   }));
 
   const ip_rule_sets = Array.from(ipRuleSets).map(rule => ({
@@ -248,7 +248,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
     type: 'remote',
     format: 'binary',
     url: `${IP_RULE_SET_BASE_URL}${IP_RULE_SETS[rule]}`,
-    download_detour: '⚡ 自动选择'
+    download_detour: '🚀 节点选择'
   }));
 
   if(customRules){

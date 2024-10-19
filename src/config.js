@@ -116,7 +116,7 @@ export const UNIFIED_RULES = [
 	  },
 	{
 		name: 'Location:!CN',
-		outbound: '🔒 非中国域名geolocation-!cn',
+		outbound: '🔒 部分非中国域名网站',
 		site_rules: ['geolocation-!cn'],
 		ip_rules: []
 	},

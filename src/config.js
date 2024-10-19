@@ -481,7 +481,7 @@ export const CLASH_CONFIG = {
 	port: 7890,
 	'socks-port': 7891,
 	'allow-lan': true,
-	'bind-address': "*"
+	'bind-address': "*",
 	mode: 'Rule',
 	ipv6: true
 	'log-level': 'info',

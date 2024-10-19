@@ -498,17 +498,17 @@ export const CLASH_CONFIG = {
 	'geo-auto-update': true,
 	'geo-update-interval': 24,
 	'geox-url': {
-	      geoip: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"],
-              geosite: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"],
-              mmdb: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"],
-              asn: ["https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"]
+	      geoip: ['"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"'],
+              geosite: ['"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"'],
+              mmdb: ['"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"'],
+              asn: ['"https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"']
 	},
 	dns: {
 		enable: true,
 		'enhanced-mode': 'redir-host',
 		'default-nameserver': ['https://223.5.5.5/dns-query'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
-		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
+		fallback: ["'https://one.one.one.one/dns-query#🚀 节点选择'"],
 		'fallback-filter': [{'geoip': true, 'geoip-code': 'CN'}],
 		'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 	},

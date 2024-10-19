@@ -485,11 +485,6 @@ export const CLASH_CONFIG = {
 	mode: 'Rule',
 	ipv6: true
 	'log-level': 'info',
-	sniffer: {
-                enable: true,
-		'force-dns-mapping': true,
-		'override-destination': true	
-	},
 	dns: {
 		enable: true,
 		nameserver: ['119.29.29.29', '223.5.5.5'],

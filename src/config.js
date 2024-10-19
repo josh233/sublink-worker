@@ -492,12 +492,8 @@ export const CLASH_CONFIG = {
 	},
 	dns: {
 		enable: true,
-		'enhanced-mode': 'redir-host',
-		'default-nameserver': ['https://223.5.5.5/dns-query'],
-		nameserver: ['https://223.5.5.5/dns-query'],
-		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
-	        'fallback-filter': ['geoip': true, 'geoip-code': 'CN'],
-		'proxy-server-nameserver': ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
+		nameserver: ['119.29.29.29', '223.5.5.5'],
+		fallback: ['8.8.8.8', '8.8.4.4', 'tls://1.0.0.1:853', 'tls://dns.google:853'],
 	},
 	proxies: [],
 	'proxy-groups': [],

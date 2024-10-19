@@ -458,7 +458,7 @@ export const SING_BOX_CONFIG = {
 	],
 	outbounds: [
 		{ type: 'direct', tag: 'DIRECT' },
-		{ type: 'block', tag: 'block' },
+		{ type: 'block', tag: 'REJECT' },
 		{ type: 'dns', tag: 'dns-out' }
 	],
 	route : {

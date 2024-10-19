@@ -490,6 +490,10 @@ export const CLASH_CONFIG = {
 		'force-dns-mapping': true,
 		'override-destination': true	
 	},
+	'geodata-mode': true,
+	'geodata-loader': 'standard',
+	'geo-auto-update': true,
+	'geo-update-interval': 24,
 	dns: {
 		enable: true,
 		'enhanced-mode': 'redir-host',

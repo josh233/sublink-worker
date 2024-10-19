@@ -302,7 +302,7 @@ export const SING_BOX_CONFIG = {
 			{ outbound: ['any'], server: 'dns_resolver' },
 			{ rule_set: ['category-ads-all'], server: 'dns_block', disable_cache: true },
 			{ rule_set: ['geolocation-cn'], server: 'dns_direct' },
-			{type: "logical",mode: "and",rules: [{rule_set: "geosite-geolocation-!cn",invert: true},{rule_set: "cn-ip"}],server: "remote_google",client_subnet: "114.114.114.114/24"}
+			{type: "logical",mode: "and",rules: [{rule_set: "geolocation-!cn",invert: true},{rule_set: "cn-ip"}],server: "remote_google",client_subnet: "114.114.114.114/24"}
 		],
 		final: 'dns_proxy',
 		independent_cache: true,

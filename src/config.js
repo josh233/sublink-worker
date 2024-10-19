@@ -480,13 +480,22 @@ export const SING_BOX_CONFIG = {
 export const CLASH_CONFIG = {
 	port: 7890,
 	'socks-port': 7891,
-	'allow-lan': false,
+	'allow-lan': true,
 	mode: 'Rule',
+	ipv6: true
 	'log-level': 'info',
+	sniffer: {
+                enable: true,
+		force-dns-mapping: true,
+		override-destination: true	
+	},
 	dns: {
 		enable: true,
+		enhanced-mode: 'redir-host',
 		nameserver: ['https://223.5.5.5/dns-query'],
 		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
+	        fallback-filter: ['geoip': true, 'geoip-code': 'CN'],
+		proxy-server-nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 	},
 	proxies: [],
 	'proxy-groups': [],

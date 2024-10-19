@@ -480,19 +480,19 @@ export const CLASH_CONFIG = {
 	ipv6: true
 	'log-level': 'info',
 	geox-url: {
-	  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat",
-          geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat",
-          mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb",
-          asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb",
+	  geoip: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"],
+          geosite: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"],
+          mmdb: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"],
+          asn: ["https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"]
 	},
         geodata-mode: true,
-	geodata-loader: standard,
+	geodata-loader: 'standard',
 	geo-auto-update: true,
 	geo-update-interval: 24,
 	sniffer: {
-		QUIC: {ports: '[' 443 ']'},
-		TLS: {ports: '['443, 8443']'},
-		HTTP: {ports: '['80, 8080-8880']'},
+		QUIC: [ports: '[' 443 ']'],
+		TLS: [ports: '['443, 8443']'],
+		HTTP: [ports: '['80, 8080-8880']']
 	},
 	dns: {
 		enable: true,
@@ -501,7 +501,7 @@ export const CLASH_CONFIG = {
 		'nameserver': ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 		'fallback': ['https://one.one.one.one/dns-query#🚀 节点选择'],
 		'fallback-filter':['geoip': true, 'geoip-code': 'CN'],
-	        'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
+	        'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 	},
 	'proxies': [],
 	'proxy-groups': [],

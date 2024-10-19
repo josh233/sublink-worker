@@ -491,7 +491,7 @@ export const CLASH_CONFIG = {
 		'override-destination': true	
 	},
 	'geodata-mode': true,
-	'geodata-loader': 'standard',
+	'geodata-loader': 'memconservative',
 	'geo-auto-update': true,
 	'geo-update-interval': 24,
 	'geox-url': {

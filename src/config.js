@@ -509,7 +509,7 @@ export const CLASH_CONFIG = {
 		'default-nameserver': ['https://223.5.5.5/dns-query'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 		fallback: ["'https://one.one.one.one/dns-query#🚀 节点选择'"],
-		'fallback-filter': [{'geoip': true, 'geoip-code': 'CN'}],
+		'fallback-filter': ["geoip: true", "'geoip-code': 'CN'"],
 		'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 	},
 	proxies: [],

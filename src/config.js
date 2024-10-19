@@ -487,6 +487,7 @@ export const CLASH_CONFIG = {
 	'log-level': 'info',
 	dns: {
 		enable: true,
+		'default-nameserver': ['https://223.5.5.5/dns-query'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
 	},

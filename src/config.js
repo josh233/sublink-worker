@@ -128,14 +128,14 @@ export const PREDEFINED_RULE_SETS = {
 // Generate SITE_RULE_SETS and IP_RULE_SETS from UNIFIED_RULES
 export const SITE_RULE_SETS = UNIFIED_RULES.reduce((acc, rule) => {
 	rule.site_rules.forEach(site_rule => {
-		acc[site_rule] = `geosite-${site_rule}.srs`;
+		acc[site_rule] = `${site_rule}.srs`;
 	});
 	return acc;
 }, {});
 
 export const IP_RULE_SETS = UNIFIED_RULES.reduce((acc, rule) => {
 	rule.ip_rules.forEach(ip_rule => {
-		acc[ip_rule] = `geoip-${ip_rule}.srs`;
+		acc[ip_rule] = `${ip_rule}.srs`;
 	});
 	return acc;
 }, {});
@@ -253,7 +253,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 					tag: site.trim(),
 					type: 'remote',
 					format: 'binary',
-					url: `${SITE_RULE_SET_BASE_URL}geosite-${site.trim()}.srs`,
+					url: `${SITE_RULE_SET_BASE_URL}${site.trim()}.srs`,
 					download_detour: '⚡ 自动选择'
 				});
 			});
@@ -264,7 +264,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 					tag: `${ip.trim()}-ip`,
 					type: 'remote',
 					format: 'binary',
-					url: `${IP_RULE_SET_BASE_URL}geoip-${ip.trim()}.srs`,
+					url: `${IP_RULE_SET_BASE_URL}${ip.trim()}.srs`,
 					download_detour: '⚡ 自动选择'
 				});
 			});

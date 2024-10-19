@@ -492,16 +492,16 @@ export const CLASH_CONFIG = {
 	sniffer: {
 		QUIC: {ports: '[' 443 ']'},
 		TLS: {ports: '['443, 8443']'},
-		HTTP: {ports: '['80, 8080-8880']'}
+		HTTP: {ports: '['80, 8080-8880']'},
 	},
 	dns: {
 		enable: true,
 		'enhanced-mode': 'redir-host',
-		'default-nameserver':['https://223.5.5.5/dns-query']
+		'default-nameserver':['https://223.5.5.5/dns-query'],
 		'nameserver': ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 		'fallback': ['https://one.one.one.one/dns-query#🚀 节点选择'],
 		'fallback-filter':['geoip': true, 'geoip-code': 'CN'],
-	        'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
+	        'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 	},
 	'proxies': [],
 	'proxy-groups': [],

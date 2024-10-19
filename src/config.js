@@ -113,13 +113,7 @@ export const UNIFIED_RULES = [
 		outbound: '☁️ 云服务',
 		site_rules: ['aws', 'azure', 'digitalocean', 'heroku', 'dropbox'],
 		ip_rules: []
-	  },
-	 {
-		name: 'Location:!CN',
-		outbound: '🚀 节点选择',
-		site_rules: ['geolocation-!cn'],
-		ip_rules: []
-	}
+	  }
 
 ];
 

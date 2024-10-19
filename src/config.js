@@ -260,7 +260,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 					type: 'remote',
 					format: 'binary',
 					url: `${SITE_RULE_SET_BASE_URL}${site.trim()}.srs`,
-					download_detour: '⚡ 自动选择'
+					download_detour: '🚀 节点选择'
 				});
 			});
 		}
@@ -271,7 +271,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 					type: 'remote',
 					format: 'binary',
 					url: `${IP_RULE_SET_BASE_URL}${ip.trim()}.srs`,
-					download_detour: '⚡ 自动选择'
+					download_detour: '🚀 节点选择'
 				});
 			});
 		}
@@ -470,7 +470,7 @@ export const SING_BOX_CONFIG = {
 		clash_api: {
 			external_controller: '127.0.0.1:9191',
 			external_ui_download_url: 'https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip',
-			external_ui_download_detour: '⚡ 自动选择',
+			external_ui_download_detour: '🚀 节点选择',
 			external_ui: 'dashboard',
 			default_mode: 'rule'
 		}

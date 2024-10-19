@@ -485,23 +485,23 @@ export const CLASH_CONFIG = {
 	mode: 'Rule',
 	ipv6: true
 	'log-level': 'info',
-	geox-url: {
-	  geoip: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"],
-          geosite: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"],
-          mmdb: ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"],
-          asn: ["https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"]
+	'geox-url': {
+	  'geoip': ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"],
+          'geosite': ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"],
+          'mmdb': ["https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"],
+          'asn': ["https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"]
 	},
-        geodata-mode: true,
-	geodata-loader: 'standard',
-	geo-auto-update: true,
-	geo-update-interval: 24,
-	sniffer: {
-		QUIC: [ports: '[' 443 ']'],
-		TLS: [ports: '['443, 8443']'],
-		HTTP: [ports: '['80, 8080-8880']']
-	},
-	dns: {
-		enable: true,
+        'geodata-mode': true,
+	'geodata-loader': 'standard',
+	'geo-auto-update': true,
+	'geo-update-interval': 24,
+	'sniffer': {[
+		"QUIC": {"ports": "'[' 443 ']'"},
+		"TLS": {"ports": "'['443, 8443']'"},
+		"HTTP": {"ports": "'['80, 8080-8880']'"}
+	]},
+	'dns': {
+		"enable": true,
 		'enhanced-mode': 'redir-host',
 		'default-nameserver':['https://223.5.5.5/dns-query'],
 		'nameserver': ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],

@@ -89,7 +89,8 @@ export class ProxyParser {
                 "alter_id": parseInt(vmessConfig.aid),
                 "security": vmessConfig.scy || "auto",
                 "tcp_fast_open": false,
-		"packet_encoding": "",
+		"packet_encoding": "xudp",
+		udp: true,
                 "transport": transport,
                 "tls": tls.enabled ? tls : undefined
             }
@@ -114,6 +115,7 @@ export class ProxyParser {
             uuid: uuid,
             tcp_fast_open: false,
             tls: tls,
+	    packet_encoding: "",
             transport: transport,
             flow: params.flow ?? undefined
           };

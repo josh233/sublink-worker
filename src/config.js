@@ -114,12 +114,18 @@ export const UNIFIED_RULES = [
 		site_rules: ['aws', 'azure', 'digitalocean', 'heroku', 'dropbox'],
 		ip_rules: []
 	  },
-	{
+	  {
+		name: 'Speedtest',
+		outbound: '♻️ Speedtest',
+		site_rules: ['speedtest'],
+		ip_rules: []
+	  },
+	  {
 		name: 'Location:!CN',
 		outbound: '🔒 部分非中国域名网站geolocation-!cn',
 		site_rules: ['geolocation-!cn'],
 		ip_rules: []
-	},
+	  },
 
 ];
 

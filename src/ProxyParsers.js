@@ -72,7 +72,11 @@ export class ProxyParser {
                     tls = {
                         "enabled": true,
                         "server_name": vmessConfig.sni,
-                        "insecure": false
+                        "insecure": false,
+			"utls": {
+                           "enabled": true,
+                           "fingerprint": "chrome"
+                        }
                     }
                 }
             }
@@ -84,7 +88,6 @@ export class ProxyParser {
                 "uuid": vmessConfig.id,
                 "alter_id": parseInt(vmessConfig.aid),
                 "security": vmessConfig.scy || "auto",
-                "network": "tcp",
                 "tcp_fast_open": false,
                 "transport": transport,
                 "tls": tls.enabled ? tls : undefined
@@ -111,7 +114,6 @@ export class ProxyParser {
             tcp_fast_open: false,
             tls: tls,
             transport: transport,
-            network: "tcp",
             flow: params.flow ?? undefined
           };
         }

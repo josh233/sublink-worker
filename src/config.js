@@ -494,18 +494,7 @@ export const CLASH_CONFIG = {
 	sniffer: {
                 enable: true,
 		'force-dns-mapping': true,
-		'override-destination': true,
-		sniff: {
-		  QUIC: {
-		     ports: \\[ 443 \\]
-		  },
-                  TLS: {
-		     ports: \\[443\\, 8443\\]
-		  },
-                  HTTP: {
-		     ports: \\[80\\, 8080-8880\\]
-		  }
-               }
+		'override-destination': true
 	},
 	dns: {
 		enable: true,

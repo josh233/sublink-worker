@@ -296,7 +296,8 @@ export const SING_BOX_CONFIG = {
 	},
 	dns: {
 		servers: [
-			{ tag: 'dns_proxy', address: 'https://one.one.one.one/dns-query', address_resolver: 'dns_resolver'},
+			{ tag: 'remote_cf', address: 'https://one.one.one.one/dns-query', address_resolver: 'dns_resolver'},
+		        {tag: 'remote_google',address: 'https://dns.google/dns-query',address_resolver: 'dns_resolver'},
 			{ tag: 'dns_direct', address: 'https://dns.alidns.com/dns-query', address_resolver: 'dns_resolver', detour: 'DIRECT' },
 			{ tag: 'dns_fakeip', address: 'fakeip' },
 			{ tag: 'dns_resolver', address: 'https://223.5.5.5/dns-query', detour: 'DIRECT' },
@@ -308,7 +309,7 @@ export const SING_BOX_CONFIG = {
 			{ rule_set: ['geolocation-cn'], server: 'dns_direct' },
 			{type: "logical",mode: "and",rules: [{rule_set: "geolocation-!cn",invert: true},{rule_set: "cn-ip"}],server: "remote_google",client_subnet: "114.114.114.114/24"}
 		],
-		final: 'dns_proxy',
+		final: 'remote_cf',
 		independent_cache: true,
 		fakeip: {
 			enabled: true,

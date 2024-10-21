@@ -34,7 +34,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
             url: "http://www.gstatic.com/generate_204",
             interval: "3m",
             tolerance: 50,
-            idle_timeout: "",
+            idle_timeout: "30m",
             interrupt_exist_connections: false
         });
 

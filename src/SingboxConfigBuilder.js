@@ -31,6 +31,11 @@ export class ConfigBuilder extends BaseConfigBuilder {
             type: "urltest",
             tag: "⚡ 自动选择",
             outbounds: DeepCopy(proxyList),
+            url: "http://www.gstatic.com/generate_204",
+            interval: "3m",
+            tolerance: 50,
+            idle_timeout: "",
+            interrupt_exist_connections: false
         });
 
         proxyList.unshift('DIRECT', 'REJECT', '⚡ 自动选择');

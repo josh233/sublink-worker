@@ -89,6 +89,7 @@ export class ProxyParser {
                 "alter_id": parseInt(vmessConfig.aid),
                 "security": vmessConfig.scy || "auto",
                 "tcp_fast_open": false,
+		"packet_encoding": "",
                 "transport": transport,
                 "tls": tls.enabled ? tls : undefined
             }

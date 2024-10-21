@@ -90,7 +90,6 @@ export class ProxyParser {
                 "security": vmessConfig.scy || "auto",
                 "tcp_fast_open": false,
 		"packet_encoding": "xudp",
-		udp: true,
                 "transport": transport,
                 "tls": tls.enabled ? tls : undefined
             }

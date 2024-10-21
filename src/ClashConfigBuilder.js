@@ -117,7 +117,7 @@ export class ClashConfigBuilder extends BaseConfigBuilder {
                     servername: proxy.tls?.server_name || '',
                     network: proxy.transport?.type || 'tcp',
 		    udp: true,
-		    'packet-encoding': '',
+		    'packet-encoding': 'xudp',
                     'ws-opts': proxy.transport?.type === 'ws' ? {
                         path: proxy.transport.path,
                         headers: proxy.transport.headers
@@ -132,7 +132,7 @@ export class ClashConfigBuilder extends BaseConfigBuilder {
                     uuid: proxy.uuid,
                     cipher: proxy.security,
 		    udp: true,
-		    'packet-encoding': xudp,
+		    'packet-encoding': 'xudp',
                     tls: proxy.tls?.enabled || false,
                     'client-fingerprint': proxy.tls.utls?.fingerprint,
                     servername: proxy.tls?.server_name || '',

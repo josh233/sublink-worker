@@ -483,7 +483,7 @@ export const SING_BOX_CONFIG = {
 };
 
 export const CLASH_CONFIG = {
-	port: 7890,
+	'mixed-port': 7890,
 	'socks-port': 7891,
 	'allow-lan': true,
 	'bind-address': "*",

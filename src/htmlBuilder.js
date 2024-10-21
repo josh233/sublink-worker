@@ -919,7 +919,7 @@ const customRuleFunctions = `
         <span class="tooltip-icon">
           <i class="fas fa-question-circle"></i>
           <span class="tooltip-content">
-            Site Rules in SingBox comes from https://github.com/lyc8503/sing-box-rules, that means your custom rules must be in the repos
+            Site Rules in SingBox comes from https://github.com/MetaCubeX/meta-rules-dat/, that means your custom rules must be in the repos
           </span>
         </span>
         <input type="text" class="form-control" name="customRuleSite[]" placeholder="e.g., google,anthropic">
@@ -929,7 +929,7 @@ const customRuleFunctions = `
         <span class="tooltip-icon">
           <i class="fas fa-question-circle"></i>
           <span class="tooltip-content">
-            IP Rules in SingBox comes from https://github.com/lyc8503/sing-box-rules, that means your custom rules must be in the repos
+            IP Rules in SingBox comes from https://github.com/MetaCubeX/meta-rules-dat/, that means your custom rules must be in the repos
           </span>
         </span>
         <input type="text" class="form-control" name="customRuleIP[]" placeholder="e.g., private,cn">

@@ -690,7 +690,7 @@ const generateRuleSetSelection = () => `
     </div>
 
     <div class="content-container mb-3">
-      <label for="predefinedRules" class="form-label">Rule Sets:</label>
+      <label for="predefinedRules" class="form-label">Rule Sets: (私有局域网、常见国内网站、常见非中国网站列表是必选项)</label>
       <select class="form-select" id="predefinedRules" onchange="applyPredefinedRules()">
         <option value="custom">Custom</option>
         <option value="minimal">Minimal</option>

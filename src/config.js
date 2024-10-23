@@ -58,24 +58,41 @@ export const UNIFIED_RULES = [
 		site_rules: ['google'],
 		ip_rules: ['google']
 	},
-
-	{
-		name: 'Private',
-		outbound: '🏠 私有局域网-private',
-		site_rules: ['private'],
-		ip_rules: ['private']
-	},
-	{
-		name: 'Location:CN',
-		outbound: '🔒 常见国内网站-geolocation-cn',
-		site_rules: ['geolocation-cn'],
-		ip_rules: ['cn']
-	},
 	{
 		name: 'Telegram',
-		outbound: '📲 电报消息-telegram',
+		outbound: '💬 电报消息-telegram',
 		site_rules: ['telegram'],
 		ip_rules: ['telegram']
+	},
+	{
+		name: 'Signal',
+		outbound: '💬 signal',
+		site_rules: ['signal'],
+		ip_rules: []
+	},
+	{
+		name: 'Discord',
+		outbound: '💬 Discord',
+		site_rules: ['discord'],
+		ip_rules: []
+	},
+	{
+		name: 'line',
+		outbound: '💬 line',
+		site_rules: ['line'],
+		ip_rules: []
+	},
+	{
+		name: 'Reddit',
+		outbound: '👾 reddit',
+		site_rules: ['reddit'],
+		ip_rules: []
+	},
+	{
+		name: 'twitch',
+		outbound: '📹 twitch',
+		site_rules: ['twitch'],
+		ip_rules: []
 	},
 	{
 		name: 'Github-Gitlab',
@@ -295,6 +312,30 @@ export const UNIFIED_RULES = [
 		ip_rules: []
 	},
 	{
+		name: 'Binance',
+		outbound: '₿ 币安',
+		site_rules: ['binance'],
+		ip_rules: []
+	},
+	{
+		name: 'Ecoin',
+		outbound: '₿ Ecoin',
+		site_rules: ['category-cryptocurrency'],
+		ip_rules: []
+	},
+	{
+		name: 'Private',
+		outbound: '🏠 私有局域网-private',
+		site_rules: ['private'],
+		ip_rules: ['private']
+	},
+	{
+		name: 'Location:CN',
+		outbound: '🔒 常见国内网站-geolocation-cn',
+		site_rules: ['geolocation-cn'],
+		ip_rules: ['cn']
+	},
+	{
 		name: 'Location:!CN',
 		outbound: '🔒 常见非中国网站列表geolocation-!cn',
 		site_rules: ['geolocation-!cn'],
@@ -303,8 +344,8 @@ export const UNIFIED_RULES = [
 ];
 
 export const PREDEFINED_RULE_SETS = {
-	minimal: ['Location:CN', 'Private'],
-	balanced: ['Location:CN', 'Private', 'Google', 'Youtube', 'AI Services', 'Telegram'],
+	minimal: ['Location:CN', 'Private', 'Ad Block'],
+	balanced: ['Ad Block', 'Location:CN', 'Private', 'Google', 'Youtube', 'OpenAI','Google-Gemini', 'Telegram', 'twitter-x', 'Instagram-threads', 'Facebook', 'Apple', 'Microsoft'],
 	comprehensive: UNIFIED_RULES.map(rule => rule.name)
   };
   

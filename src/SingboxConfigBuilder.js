@@ -107,7 +107,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
                         "rule_set": "geosite-geolocation-!cn"
                     }
                 ],
-                "outbound": "block"
+                "outbound": "REJECT"
             },
             { clash_mode: 'direct', outbound: 'DIRECT' },
             { clash_mode: 'global', outbound: 'GLOBAL' },
@@ -116,7 +116,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
                     ".v1d.szbdyd.com",
                     ".mcdn.bilivideo.cn"
                 ],
-                "outbound": "block"
+                "outbound": "REJECT"
             }
         );
 

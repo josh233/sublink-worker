@@ -724,7 +724,7 @@ export const CLASH_CONFIG = {
 		enable: true,
 		'enhanced-mode': 'redir-host',
 		'respect-rules': true,
-		'default-nameserver': ['223.5.5.5', '114.114.114.114'],
+		'default-nameserver': ['https://223.5.5.5/dns-query'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
 		'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']

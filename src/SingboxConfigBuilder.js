@@ -117,7 +117,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
                     ".mcdn.bilivideo.cn"
                 ],
                 "outbound": "block"
-            },
+            }
         );
 
         this.config.route.auto_detect_interface = true;

@@ -1,5 +1,5 @@
-export const SITE_RULE_SET_BASE_URL = ' https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/';
-export const IP_RULE_SET_BASE_URL = ' https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/';
+export const SITE_RULE_SET_BASE_URL = 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/';
+export const IP_RULE_SET_BASE_URL = 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/';
 // Custom rules
 export const CUSTOM_RULES = [];
 // Unified rule structure

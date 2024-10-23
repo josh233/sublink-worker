@@ -59,6 +59,12 @@ export const UNIFIED_RULES = [
 		ip_rules: ['google']
 	},
 	{
+		name: 'Azure',
+		outbound: '☁️ 云服务 Azure',
+		site_rules: ['azure'],
+		ip_rules: []
+	},
+	{
 		name: 'Microsoft',
 		outbound: '🪟 Microsoft-Bing-Copilot-Azure',
 		site_rules: ['microsoft'],
@@ -326,19 +332,19 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Private',
-		outbound: '🏠 私有局域网-private',
+		outbound: '🏠 私有局域网-private(必选)',
 		site_rules: ['private'],
 		ip_rules: ['private']
 	},
 	{
 		name: 'Location:CN',
-		outbound: '🔒 常见国内网站-geolocation-cn',
+		outbound: '🔒 常见国内网站-geolocation-cn(必选)',
 		site_rules: ['geolocation-cn'],
 		ip_rules: ['cn']
 	},
 	{
 		name: 'Location:!CN',
-		outbound: '🔒 常见非中国网站列表-geolocation-!cn',
+		outbound: '🔒 常见非中国网站列表-geolocation-!cn(必选)',
 		site_rules: ['geolocation-!cn'],
 		ip_rules: []
 	}

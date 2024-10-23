@@ -9,66 +9,174 @@ export const UNIFIED_RULES = [
 		outbound: '🛑 广告拦截',
 		site_rules: ['category-ads-all'],
 		ip_rules: []
+	},	
+	{
+		name: 'OpenAI',
+		outbound: '🤖 openai',
+		site_rules: ['openai'],
+		ip_rules: []
 	},
 	{
-		name: 'AI Services',
-		outbound: '💬 AI 服务',
-		site_rules: ['openai', 'anthropic','jetbrains-ai','perplexity'],
+		name: 'Anthropic-Claude',
+		outbound: '🤖 Anthropic-Claude',
+		site_rules: ['anthropic'],
+		ip_rules: []
+	},
+	{
+		name: 'Jetbrains-AI',
+		outbound: '🤖 jetbrains-ai',
+		site_rules: ['jetbrains-ai'],
+		ip_rules: []
+	},	
+	{
+		name: 'Perplexity',
+		outbound: '🤖 perplexity',
+		site_rules: ['perplexity'],
+		ip_rules: []
+	},	
+	{
+		name: 'Google-Gemini',
+		outbound: '🤖 google-gemini',
+		site_rules: ['google-gemini'],
 		ip_rules: []
 	},
 	{
 		name: 'Bilibili',
-		outbound: '📺 哔哩哔哩',
+		outbound: '📺 哔哩哔哩bilibili',
 		site_rules: ['bilibili'],
 		ip_rules: []
 	},
 	{
 		name: 'Youtube',
-		outbound: '📹 油管视频',
+		outbound: '📹 youtube视频',
 		site_rules: ['youtube'],
 		ip_rules: []
 	},
 	{
 		name: 'Google',
-		outbound: '🔍 谷歌服务',
+		outbound: '🔍 谷歌服务-Google',
 		site_rules: ['google'],
 		ip_rules: ['google']
 	},
 
 	{
 		name: 'Private',
-		outbound: '🏠 私有网络',
-		site_rules: [],
+		outbound: '🏠 私有局域网-private',
+		site_rules: ['private'],
 		ip_rules: ['private']
 	},
 	{
 		name: 'Location:CN',
-		outbound: '🔒 国内服务',
+		outbound: '🔒 常见国内网站-geolocation-cn',
 		site_rules: ['geolocation-cn'],
 		ip_rules: ['cn']
 	},
 	{
 		name: 'Telegram',
-		outbound: '📲 电报消息',
-		site_rules: [],
+		outbound: '📲 电报消息-telegram',
+		site_rules: ['telegram'],
 		ip_rules: ['telegram']
 	},
 	{
-		name: 'Github',
-		outbound: '🐱 Github',
+		name: 'Github-Gitlab',
+		outbound: '🐱 Github-Gitlab',
 		site_rules: ['github', 'gitlab'],
 		ip_rules: []
 	},
 	{
-		name: 'Microsoft',
-		outbound: 'Ⓜ️ 微软服务',
-		site_rules: ['microsoft'],
+		name: 'Apple',
+		outbound: '🍏 苹果服务-Apple',
+		site_rules: ['apple'],
 		ip_rules: []
 	},
 	{
-		name: 'Apple',
-		outbound: '🍏 苹果服务',
-		site_rules: ['apple'],
+		name: 'twitter-x',
+		outbound: '🌐 twitter-x',
+		site_rules: ['twitter','x'],
+		ip_rules: ['twitter']
+	},
+	{
+		name: 'Instagram-threads',
+		outbound: '🌐 instagram-threads',
+		site_rules: ['instagram','threads'],
+		ip_rules: []
+	},
+	{
+		name: 'Facebook',
+		outbound: '🌐 Facebook非死不可',
+		site_rules: ['facebook'],
+		ip_rules: ['facebook']
+	},
+	{
+		name: 'Linkedin',
+		outbound: '🌐 linkedin',
+		site_rules: ['linkedin'],
+		ip_rules: []
+	},
+	{
+		name: 'Tiktok',
+		outbound: '🎶 tiktok',
+		site_rules: ['tiktok'],
+		ip_rules: []
+	},
+	{
+		name: 'Netflix',
+		outbound: '🎬 netflix',
+		site_rules: ['netflix'],
+		ip_rules: ['netflix']
+	},
+	{
+		name: 'Hulu',
+		outbound: '🎬 hulu',
+		site_rules: ['hulu'],
+		ip_rules: []
+	},
+	{
+		name: 'Disney',
+		outbound: '🎬 disney',
+		site_rules: ['disney'],
+		ip_rules: []
+	},
+	{
+		name: 'hbo',
+		outbound: '🎬 hbo',
+		site_rules: ['hbo'],
+		ip_rules: []
+	},
+	{
+		name: 'Prime Video',
+		outbound: '🎬 Prime Video',
+		site_rules: ['primevideo'],
+		ip_rules: []
+	},
+	{
+		name: 'steam',
+		outbound: '🎮 游戏平台steam',
+		site_rules: ['steam'],
+		ip_rules: []
+	},
+	{
+		name: 'Epicgames',
+		outbound: '🎮 游戏平台epicgames',
+		site_rules: ['epicgames'],
+		ip_rules: []
+	},
+	{
+		name: 'ea',
+		outbound: '🎮 游戏平台ea',
+		site_rules: ['ea'],
+		ip_rules: []
+	},
+	{
+		name: 'ubisoft',
+		outbound: '🎮 游戏平台ubisoft',
+		site_rules: ['ubisoft'],
+		ip_rules: []
+	},
+	{
+		name: 'blizzard',
+		outbound: '🎮 游戏平台blizzard',
+		site_rules: ['blizzard'],
 		ip_rules: []
 	},
 	{
@@ -77,56 +185,121 @@ export const UNIFIED_RULES = [
 		site_rules: ['bahamut'],
 		ip_rules: []
 	},
-
 	{
-		name: 'Social Media',
-		outbound: '🌐 社交媒体',
-		site_rules: ['facebook', 'instagram', 'twitter', 'tiktok', 'linkedin'],
+		name: 'coursera',
+		outbound: '📚 教育资源coursera',
+		site_rules: ['coursera'],
 		ip_rules: []
-	  },
-	  {
-		name: 'Streaming',
-		outbound: '🎬 流媒体',
-		site_rules: ['netflix', 'hulu', 'disney', 'hbo', 'amazon'],
+	},
+	{
+		name: 'edx',
+		outbound: '📚 教育资源edx',
+		site_rules: ['edx'],
 		ip_rules: []
-	  },
-	  {
-		name: 'Gaming',
-		outbound: '🎮 游戏平台',
-		site_rules: ['steam', 'epicgames', 'ea', 'ubisoft', 'blizzard'],
+	},
+	{
+		name: 'udemy',
+		outbound: '📚 教育资源udemy',
+		site_rules: ['udemy'],
 		ip_rules: []
-	  },
-	  {
-		name: 'Education',
-		outbound: '📚 教育资源',
-		site_rules: ['coursera', 'edx', 'udemy', 'khanacademy', 'category-scholar-!cn'],
+	},
+	{
+		name: 'khanacademy',
+		outbound: '📚 教育资源khanacademy',
+		site_rules: ['khanacademy'],
 		ip_rules: []
-	  },
-	  {
-		name: 'Financial',
-		outbound: '💰 金融服务',
-		site_rules: ['paypal', 'visa', 'mastercard','stripe','wise'],
+	},
+	{
+		name: 'category-scholar-!cn',
+		outbound: '📚 其他学术资源category-scholar-!cn',
+		site_rules: ['category-scholar-!cn'],
 		ip_rules: []
-	  },
-	  {
-		name: 'Cloud Services',
-		outbound: '☁️ 云服务',
-		site_rules: ['aws', 'azure', 'digitalocean', 'heroku', 'dropbox'],
+	},
+	{
+		name: 'paypal',
+		outbound: '💰 金融服务paypal',
+		site_rules: ['paypal'],
 		ip_rules: []
-	  },
-	  {
+	},
+	{
+		name: 'visa',
+		outbound: '💰 金融服务visa',
+		site_rules: ['visa'],
+		ip_rules: []
+	},
+	{
+		name: 'mastercard',
+		outbound: '💰 金融服务mastercard',
+		site_rules: ['mastercard'],
+		ip_rules: []
+	},
+	{
+		name: 'stripe',
+		outbound: '💰 金融服务stripe',
+		site_rules: ['stripe'],
+		ip_rules: []
+	},
+	{
+		name: 'wise',
+		outbound: '💰 金融服务wise',
+		site_rules: ['wise'],
+		ip_rules: []
+	},
+
+        {
+		name: 'aws',
+		outbound: '☁️ 云服务aws',
+		site_rules: ['aws'],
+		ip_rules: []
+	},
+	{
+		name: 'azure',
+		outbound: '☁️ 云服务azure',
+		site_rules: ['azure'],
+		ip_rules: []
+	},
+	{
+		name: 'Microsoft',
+		outbound: '🪟 微软服务Microsoft-bing',
+		site_rules: ['microsoft'],
+		ip_rules: []
+	},
+	{
+		name: 'Oracle',
+		outbound: '☁️ oracle-java-Cloud-virtualbox',
+		site_rules: ['oracle'],
+		ip_rules: []
+	},
+	{
+		name: 'digitalocean-vultr',
+		outbound: '☁️ 云服务digitalocean-vultr',
+		site_rules: ['digitalocean','vultr'],
+		ip_rules: []
+	},
+	{
+		name: 'Dropbox',
+		outbound: '☁️ 云存储服务dropbox',
+		site_rules: ['dropbox'],
+		ip_rules: []
+	},
+	{
+		name: 'heroku',
+		outbound: '☁️ 云服务heroku',
+		site_rules: ['heroku'],
+		ip_rules: []
+	},
+	{
 		name: 'Speedtest',
 		outbound: '♻️ Speedtest',
 		site_rules: ['speedtest'],
 		ip_rules: []
-	  },
-	  {
+	},
+	{
 		name: 'Location:!CN',
-		outbound: '🔒 部分非中国域名网站geolocation-!cn',
+		outbound: '🔒 常见非中国网站列表geolocation-!cn',
 		site_rules: ['geolocation-!cn'],
 		ip_rules: []
-	  },
-
+	}
 ];
 
 export const PREDEFINED_RULE_SETS = {

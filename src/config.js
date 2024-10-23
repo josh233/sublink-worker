@@ -24,19 +24,19 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Jetbrains-AI',
-		outbound: '🤖 jetbrains-ai',
+		outbound: '🤖 Jetbrains-ai',
 		site_rules: ['jetbrains-ai'],
 		ip_rules: []
 	},	
 	{
 		name: 'Perplexity',
-		outbound: '🤖 perplexity',
+		outbound: '🤖 Perplexity',
 		site_rules: ['perplexity'],
 		ip_rules: []
 	},	
 	{
 		name: 'Google-Gemini',
-		outbound: '🤖 google-gemini',
+		outbound: '🤖 Google-Gemini',
 		site_rules: ['google-gemini'],
 		ip_rules: []
 	},
@@ -48,19 +48,19 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Youtube',
-		outbound: '📹 youtube视频',
+		outbound: '📹 Youtube',
 		site_rules: ['youtube'],
 		ip_rules: []
 	},
 	{
 		name: 'Google',
-		outbound: '🔍 谷歌服务-Google',
+		outbound: '🔍 Google',
 		site_rules: ['google'],
 		ip_rules: ['google']
 	},
 	{
 		name: 'Telegram',
-		outbound: '💬 电报消息-telegram',
+		outbound: '💬 telegram',
 		site_rules: ['telegram'],
 		ip_rules: ['telegram']
 	},
@@ -120,13 +120,13 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Facebook',
-		outbound: '🌐 Facebook非死不可',
+		outbound: '🌐 Facebook',
 		site_rules: ['facebook'],
 		ip_rules: ['facebook']
 	},
 	{
 		name: 'Linkedin',
-		outbound: '🌐 linkedin',
+		outbound: '🌐 Linkedin',
 		site_rules: ['linkedin'],
 		ip_rules: []
 	},
@@ -168,31 +168,31 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'steam',
-		outbound: '🎮 游戏平台steam',
+		outbound: '🎮 游戏平台-steam',
 		site_rules: ['steam'],
 		ip_rules: []
 	},
 	{
 		name: 'Epicgames',
-		outbound: '🎮 游戏平台epicgames',
+		outbound: '🎮 游戏平台-epicgames',
 		site_rules: ['epicgames'],
 		ip_rules: []
 	},
 	{
 		name: 'ea',
-		outbound: '🎮 游戏平台ea',
+		outbound: '🎮 游戏平台-ea',
 		site_rules: ['ea'],
 		ip_rules: []
 	},
 	{
 		name: 'ubisoft',
-		outbound: '🎮 游戏平台ubisoft',
+		outbound: '🎮 游戏平台-ubisoft',
 		site_rules: ['ubisoft'],
 		ip_rules: []
 	},
 	{
 		name: 'blizzard',
-		outbound: '🎮 游戏平台blizzard',
+		outbound: '🎮 游戏平台-blizzard',
 		site_rules: ['blizzard'],
 		ip_rules: []
 	},
@@ -204,25 +204,25 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'coursera',
-		outbound: '📚 教育资源coursera',
+		outbound: '📚 教育资源-coursera',
 		site_rules: ['coursera'],
 		ip_rules: []
 	},
 	{
 		name: 'edx',
-		outbound: '📚 教育资源edx',
+		outbound: '📚 教育资源-edx',
 		site_rules: ['edx'],
 		ip_rules: []
 	},
 	{
 		name: 'udemy',
-		outbound: '📚 教育资源udemy',
+		outbound: '📚 教育资源-udemy',
 		site_rules: ['udemy'],
 		ip_rules: []
 	},
 	{
 		name: 'khanacademy',
-		outbound: '📚 教育资源khanacademy',
+		outbound: '📚 教育资源-khanacademy',
 		site_rules: ['khanacademy'],
 		ip_rules: []
 	},
@@ -234,50 +234,49 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'paypal',
-		outbound: '💰 金融服务paypal',
+		outbound: '💰 金融服务-paypal',
 		site_rules: ['paypal'],
 		ip_rules: []
 	},
 	{
 		name: 'visa',
-		outbound: '💰 金融服务visa',
+		outbound: '💰 金融服务-visa',
 		site_rules: ['visa'],
 		ip_rules: []
 	},
 	{
 		name: 'mastercard',
-		outbound: '💰 金融服务mastercard',
+		outbound: '💰 金融服务-mastercard',
 		site_rules: ['mastercard'],
 		ip_rules: []
 	},
 	{
 		name: 'stripe',
-		outbound: '💰 金融服务stripe',
+		outbound: '💰 金融服务-stripe',
 		site_rules: ['stripe'],
 		ip_rules: []
 	},
 	{
 		name: 'wise',
-		outbound: '💰 金融服务wise',
+		outbound: '💰 金融服务-wise',
 		site_rules: ['wise'],
 		ip_rules: []
 	},
-
         {
 		name: 'aws',
-		outbound: '☁️ 云服务aws',
+		outbound: '☁️ 云服务 aws',
 		site_rules: ['aws'],
 		ip_rules: []
 	},
 	{
 		name: 'azure',
-		outbound: '☁️ 云服务azure',
+		outbound: '☁️ 云服务 azure',
 		site_rules: ['azure'],
 		ip_rules: []
 	},
 	{
 		name: 'Microsoft',
-		outbound: '🪟 微软 Microsoft-bing',
+		outbound: '🪟 Microsoft-bing',
 		site_rules: ['microsoft'],
 		ip_rules: []
 	},
@@ -295,13 +294,13 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Dropbox',
-		outbound: '☁️ 云存储服务dropbox',
+		outbound: '☁️ 云存储 dropbox',
 		site_rules: ['dropbox'],
 		ip_rules: []
 	},
 	{
 		name: 'heroku',
-		outbound: '☁️ 云服务heroku',
+		outbound: '☁️ 云服务 heroku',
 		site_rules: ['heroku'],
 		ip_rules: []
 	},
@@ -319,7 +318,7 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Ecoin',
-		outbound: '₿ Ecoin',
+		outbound: '₿ 加密货币crypto',
 		site_rules: ['category-cryptocurrency'],
 		ip_rules: []
 	},
@@ -337,7 +336,7 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Location:!CN',
-		outbound: '🔒 常见非中国网站列表geolocation-!cn',
+		outbound: '🔒 常见非中国网站列表-geolocation-!cn',
 		site_rules: ['geolocation-!cn'],
 		ip_rules: []
 	}

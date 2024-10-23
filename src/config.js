@@ -80,7 +80,7 @@ export const UNIFIED_RULES = [
 		name: 'zoom',
 		outbound: '🎦 zoom',
 		site_rules: ['zoom'],
-		ip_rules: ['']
+		ip_rules: []
 	},
 	{
 		name: 'Telegram',

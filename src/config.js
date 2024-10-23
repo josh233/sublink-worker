@@ -59,6 +59,12 @@ export const UNIFIED_RULES = [
 		ip_rules: ['google']
 	},
 	{
+		name: 'zoom',
+		outbound: '🎦 zoom',
+		site_rules: ['zoom'],
+		ip_rules: ['']
+	},
+	{
 		name: 'Telegram',
 		outbound: '💬 telegram',
 		site_rules: ['telegram'],
@@ -720,7 +726,7 @@ export const CLASH_CONFIG = {
 		enable: true,
 		'enhanced-mode': 'redir-host',
 		'respect-rules': true,
-		'default-nameserver': ['https://223.5.5.5/dns-query'],
+		'default-nameserver': ['223.5.5.5', '114.114.114.114'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
 		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
 		'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']

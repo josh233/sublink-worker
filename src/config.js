@@ -59,6 +59,18 @@ export const UNIFIED_RULES = [
 		ip_rules: ['google']
 	},
 	{
+		name: 'Microsoft',
+		outbound: '🪟 Microsoft-Bing-Copilot-Azure',
+		site_rules: ['microsoft'],
+		ip_rules: []
+	},
+	{
+		name: 'Apple',
+		outbound: '🍏 苹果服务-Apple',
+		site_rules: ['apple'],
+		ip_rules: []
+	},
+	{
 		name: 'zoom',
 		outbound: '🎦 zoom',
 		site_rules: ['zoom'],
@@ -106,12 +118,7 @@ export const UNIFIED_RULES = [
 		site_rules: ['github', 'gitlab'],
 		ip_rules: []
 	},
-	{
-		name: 'Apple',
-		outbound: '🍏 苹果服务-Apple',
-		site_rules: ['apple'],
-		ip_rules: []
-	},
+
 	{
 		name: 'twitter-x',
 		outbound: '🌐 twitter-x',
@@ -274,18 +281,7 @@ export const UNIFIED_RULES = [
 		site_rules: ['aws'],
 		ip_rules: []
 	},
-	{
-		name: 'azure',
-		outbound: '☁️ 云服务 azure',
-		site_rules: ['azure'],
-		ip_rules: []
-	},
-	{
-		name: 'Microsoft',
-		outbound: '🪟 Microsoft-Bing-Copilot',
-		site_rules: ['microsoft'],
-		ip_rules: []
-	},
+
 	{
 		name: 'Oracle',
 		outbound: '☁️ oracle-java-Cloud-virtualbox',

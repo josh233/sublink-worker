@@ -277,7 +277,7 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'Microsoft',
-		outbound: '🪟 微软服务Microsoft-bing',
+		outbound: '🪟 微软 Microsoft-bing',
 		site_rules: ['microsoft'],
 		ip_rules: []
 	},
@@ -289,7 +289,7 @@ export const UNIFIED_RULES = [
 	},
 	{
 		name: 'digitalocean-vultr',
-		outbound: '☁️ 云服务digitalocean-vultr',
+		outbound: '☁️ digitalocean-vultr',
 		site_rules: ['digitalocean','vultr'],
 		ip_rules: []
 	},

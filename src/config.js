@@ -536,7 +536,10 @@ export const SING_BOX_CONFIG = {
 			{type: "logical",mode: "and",rules: [{rule_set: "geolocation-!cn",invert: true},{rule_set: "cn-ip"}],server: "remote_google",client_subnet: "114.114.114.114/24"}
 		],
 		final: 'remote_cf',
-		independent_cache: true,
+		"disable_cache": false,
+                "disable_expire": false,
+                "independent_cache": false,
+                "reverse_mapping": false,
 		fakeip: {
 			enabled: true,
 			inet4_range: '198.18.0.0/15',
@@ -726,9 +729,9 @@ export const CLASH_CONFIG = {
 		enable: true,
 		'enhanced-mode': 'redir-host',
 		'respect-rules': true,
-		'default-nameserver': ['https://223.5.5.5/dns-query'],
+		'default-nameserver': ['https://223.5.5.5/dns-query', 'https://1.12.12.12/dns-query'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
-		fallback: ['https://one.one.one.one/dns-query#🚀 节点选择'],
+		fallback: ['https://1.1.1.1/dns-query#🚀 节点选择'],
 		'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 	},
 	proxies: [],

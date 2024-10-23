@@ -93,8 +93,31 @@ export class ConfigBuilder extends BaseConfigBuilder {
         // Add any default rules that should always be present
         this.config.route.rules.unshift(
             { protocol: 'dns', outbound: 'dns-out' },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "protocol": "quic"
+                    },
+                    {
+                        "port": 443
+                    },
+                    {
+                        "rule_set": "geosite-geolocation-!cn"
+                    }
+                ],
+                "outbound": "block"
+            },
             { clash_mode: 'direct', outbound: 'DIRECT' },
-            { clash_mode: 'global', outbound: 'GLOBAL' }
+            { clash_mode: 'global', outbound: 'GLOBAL' },
+            {
+                "domain_suffix": [
+                    ".v1d.szbdyd.com",
+                    ".mcdn.bilivideo.cn"
+                ],
+                "outbound": "block"
+            },
         );
 
         this.config.route.auto_detect_interface = true;

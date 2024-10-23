@@ -93,22 +93,6 @@ export class ConfigBuilder extends BaseConfigBuilder {
         // Add any default rules that should always be present
         this.config.route.rules.unshift(
             { protocol: 'dns', outbound: 'dns-out' },
-            {
-                "type": "logical",
-                "mode": "and",
-                "rules": [
-                    {
-                        "protocol": "quic"
-                    },
-                    {
-                        "port": 443
-                    },
-                    {
-                        "rule_set": "geosite-geolocation-!cn"
-                    }
-                ],
-                "outbound": "REJECT"
-            },
             { clash_mode: 'direct', outbound: 'DIRECT' },
             { clash_mode: 'global', outbound: 'GLOBAL' },
             {

@@ -571,20 +571,7 @@ export const SING_BOX_CONFIG = {
 	outbounds: [
 		{ type: 'direct', tag: 'DIRECT' },
 		{ type: 'block', tag: 'REJECT' },
-		{ type: 'dns', tag: 'dns-out' },
-		{
-			"type": "logical",
-			"mode": "and",
-			"rules": [
-			    {
-				"protocol": "quic"
-			    },
-			    {
-				"rule_set": "geolocation-!cn"
-			    }
-			],
-			"outbound": "REJECT"
-               },
+		{ type: 'dns', tag: 'dns-out' }
 	],
 	route : {
 	},

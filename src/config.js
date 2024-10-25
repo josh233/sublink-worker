@@ -517,7 +517,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 // Singbox configuration
 export const SING_BOX_CONFIG = {
 	log: {
-		disabled: true,
+		disabled: false,
 		level: 'info',
 		timestamp: true,
 	},

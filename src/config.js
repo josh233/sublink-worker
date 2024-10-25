@@ -612,7 +612,7 @@ export const CLASH_CONFIG = {
 		'respect-rules': true,
 		'default-nameserver': ['https://223.5.5.5/dns-query', 'https://1.12.12.12/dns-query'],
 		nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'],
-		fallback: [\'https://1.1.1.1/dns-query#🚀 节点选择\'],
+		fallback: ['https://1.1.1.1/dns-query#🚀 节点选择'],
 		'proxy-server-nameserver':['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 	},
 	proxies: [],

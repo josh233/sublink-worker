@@ -467,7 +467,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
     type: 'remote',
     format: 'binary',
     url: `${SITE_RULE_SET_BASE_URL}${SITE_RULE_SETS[rule]}`,
-    download_detour: '⚡ 自动选择',
+    download_detour: '🚀 节点选择',
     update_interval: '1d'
   }));
 
@@ -476,7 +476,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
     type: 'remote',
     format: 'binary',
     url: `${IP_RULE_SET_BASE_URL}${IP_RULE_SETS[rule]}`,
-    download_detour: '⚡ 自动选择',
+    download_detour: '🚀 节点选择',
     update_interval: '1d'
   }));
 
@@ -489,7 +489,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 					type: 'remote',
 					format: 'binary',
 					url: `${SITE_RULE_SET_BASE_URL}${site.trim()}.srs`,
-					download_detour: '⚡ 自动选择',
+					download_detour: '🚀 节点选择',
 					update_interval: '1d'
 				});
 			});
@@ -501,7 +501,7 @@ export function generateRuleSets(selectedRules = [], customRules = []) {
 					type: 'remote',
 					format: 'binary',
 					url: `${IP_RULE_SET_BASE_URL}${ip.trim()}.srs`,
-					download_detour: '⚡ 自动选择',
+					download_detour: '🚀 节点选择',
 					update_interval: '1d'
 				});
 			});

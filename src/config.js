@@ -525,7 +525,7 @@ export const SING_BOX_CONFIG = {
 		servers: [
 			{ tag: 'remote_cf', address: 'https://one.one.one.one/dns-query', address_resolver: 'dns_resolver'},
 		        {tag: 'remote_google',address: 'https://dns.google/dns-query',address_resolver: 'dns_resolver'},
-			{ tag: 'dns_direct', address: 'https://dns.alidns.com/dns-query', address_resolver: 'dns_resolver', detour: 'DIRECT' },
+			{ tag: 'dns_direct', address: 'https://doh.pub/dns-query', address_resolver: 'dns_resolver', detour: 'DIRECT' },
 			{ tag: 'dns_fakeip', address: 'fakeip' },
 			{ tag: 'dns_resolver', address: 'https://223.5.5.5/dns-query', detour: 'DIRECT' },
 			{ tag: 'block', address: 'rcode://success' }

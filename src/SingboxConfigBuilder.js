@@ -96,6 +96,19 @@ export class ConfigBuilder extends BaseConfigBuilder {
             { clash_mode: 'direct', outbound: 'DIRECT' },
             { clash_mode: 'global', outbound: 'GLOBAL' },
             {
+    			"type": "logical",
+    			"mode": "and",
+    			"rules": [
+    			    {
+    				"protocol": "quic"
+    			    },
+    			    {
+    				"rule_set": "geolocation-!cn"
+    			    }
+			     ],
+			     "outbound": "REJECT"
+            },
+            {
                 "domain_suffix": [
                     ".v1d.szbdyd.com",
                     ".mcdn.bilivideo.cn"

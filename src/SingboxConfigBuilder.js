@@ -72,6 +72,12 @@ export class ConfigBuilder extends BaseConfigBuilder {
             tag: "🐟 漏网之鱼",
             outbounds: ['🚀 节点选择', ...proxyList]
         });
+
+	this.config.outbounds.push({
+            type: "selector",
+            tag: "download_detour",
+            outbounds: [...proxyList]
+        });
     }
 
     formatConfig() {

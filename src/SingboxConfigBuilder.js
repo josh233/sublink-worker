@@ -38,7 +38,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
             interrupt_exist_connections: false
         });
 
-        proxyList.unshift('⚡ 自动选择', 'DIRECT', 'REJECT');
+        proxyList.unshift('DIRECT', 'REJECT', '⚡ 自动选择');
         outbounds.unshift('🚀 节点选择','GLOBAL');
         
         outbounds.forEach(outbound => {

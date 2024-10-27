@@ -76,7 +76,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
 	this.config.outbounds.push({
             type: "selector",
             tag: "download_detour分流文件下载出口",
-            outbounds: [DeepCopy(proxyList), 'DIRECT']
+            outbounds: [proxyList]
         });
     }
 

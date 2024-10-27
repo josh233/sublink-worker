@@ -40,7 +40,7 @@ export class ClashConfigBuilder extends BaseConfigBuilder {
             lazy: false
         });
 
-        proxyList.unshift('DIRECT', 'REJECT', '⚡ 自动选择');
+        proxyList.unshift('⚡ 自动选择', 'DIRECT', 'REJECT');
         outbounds.unshift('🚀 节点选择');
         
         outbounds.forEach(outbound => {

@@ -76,7 +76,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
 	this.config.outbounds.push({
             type: "selector",
             tag: "download_detour",
-            outbounds: [...proxyList]
+            outbounds: [proxyList, '⚡ 自动选择']
         });
     }
 

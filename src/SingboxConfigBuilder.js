@@ -38,7 +38,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
             interrupt_exist_connections: false
         });
 
-        proxyList.unshift('DIRECT', 'REJECT', '⚡ 自动选择');
+        proxyList.unshift('⚡ 自动选择', 'DIRECT', 'REJECT');
         outbounds.unshift('🚀 节点选择','GLOBAL');
         
         outbounds.forEach(outbound => {
@@ -76,7 +76,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
 	this.config.outbounds.push({
             type: "selector",
             tag: "download_detour",
-            outbounds: [proxyList, '⚡ 自动选择']
+            outbounds: ['🚀 节点选择', ...proxyList]
         });
     }
 

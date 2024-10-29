@@ -339,7 +339,7 @@ export const UNIFIED_RULES = [
 	{
 		name: 'Location:CN',
 		outbound: '🔒 常见国内网站-geolocation-cn(必选!)',
-		site_rules: ['geolocation-cn'],
+		site_rules: ['tld-cn','geolocation-cn'],
 		ip_rules: ['cn']
 	},
 	{

@@ -532,6 +532,8 @@ export const SING_BOX_CONFIG = {
 		],
 		rules: [
 			{ outbound: ['any'], server: 'dns_resolver' },
+   { "clash_mode": "direct", "server": "dns_direct" },
+   { "clash_mode": "global","server": "remote_google" },
 			{ rule_set: ['geolocation-cn'], server: 'dns_direct' },
 			{type: "logical",mode: "and",rules: [{rule_set: "geolocation-!cn",invert: true},{rule_set: "cn-ip"}],server: "remote_google",client_subnet: "114.114.114.114/24"}
 		],

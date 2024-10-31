@@ -559,7 +559,7 @@ export const SING_BOX_CONFIG = {
 		{ type: 'tun', tag: 'tun-in', inet4_address: '172.19.0.1/30', "inet6_address": "fdfe:dcba:9876::1/126",auto_route: true, strict_route: true, stack: 'gvisor', sniff: true,"sniff_override_destination": true,"domain_strategy": "prefer_ipv4"},
 	        {
 	              type: "mixed",
-	              listen: "0.0.0.0",
+	              listen: "::",
 	              listen_port: 7890,
 	              tcp_fast_open: false,
 	              tcp_multi_path: false,

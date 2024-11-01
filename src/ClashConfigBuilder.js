@@ -36,7 +36,7 @@ export class ClashConfigBuilder extends BaseConfigBuilder {
             type: 'url-test',
             proxies: DeepCopy(proxyList),
             url: 'http://www.gstatic.com/generate_204',
-            interval: 180,
+            interval: 1200,
             lazy: false
         });
 

@@ -602,6 +602,8 @@ export const CLASH_CONFIG = {
 	mode: 'Rule',
 	ipv6: true,
 	'log-level': 'info',
+ 'keep-alive-interval': 15,
+ 'keep-alive-idle': 600,
 	'global-client-fingerprint': 'chrome',
 	sniffer: {
                 enable: true,

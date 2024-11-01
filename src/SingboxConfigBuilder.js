@@ -32,7 +32,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
             tag: "⚡ 自动选择",
             outbounds: DeepCopy(proxyList),
             url: "http://www.gstatic.com/generate_204",
-            interval: "3m",
+            interval: "30m",
             tolerance: 50,
             idle_timeout: "30m",
             interrupt_exist_connections: false

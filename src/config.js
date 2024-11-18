@@ -556,7 +556,7 @@ export const SING_BOX_CONFIG = {
 		detour: 'DIRECT'
 	},
 	inbounds: [
-		{ type: 'tun', tag: 'tun-in', inet4_address: '172.19.0.1/30', "inet6_address": "fdfe:dcba:9876::1/126",auto_route: true, strict_route: true, stack: 'mixed', sniff: true,"sniff_override_destination": true,"domain_strategy": "prefer_ipv4"},
+		{ type: 'tun', tag: 'tun-in', inet4_address: '172.19.0.1/30', "inet6_address": "fdfe:dcba:9876::1/126",auto_route: true, strict_route: true, stack: 'mixed', sniff: true,"sniff_override_destination": false,"domain_strategy": "prefer_ipv4"},
 	        {
 	              type: "mixed",
 	              listen: "::",
@@ -565,7 +565,7 @@ export const SING_BOX_CONFIG = {
 	              tcp_multi_path: false,
 	              udp_fragment: false,
 	              sniff: true,
-	              sniff_override_destination: true,
+	              sniff_override_destination: false,
 	              domain_strategy: 'prefer_ipv4',
 	              set_system_proxy: false
                }
@@ -608,7 +608,7 @@ export const CLASH_CONFIG = {
 	sniffer: {
                 enable: true,
 		'force-dns-mapping': true,
-		'override-destination': true
+		'override-destination': false
 	},
 	dns: {
 		enable: true,

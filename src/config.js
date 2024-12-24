@@ -556,7 +556,7 @@ export const SING_BOX_CONFIG = {
 		detour: 'DIRECT'
 	},
 	inbounds: [
-		{ type: 'tun', tag: 'tun-in', inet4_address: '172.19.0.1/30', "inet6_address": "fdfe:dcba:9876::1/126",auto_route: true, strict_route: true, stack: 'gvisor', sniff: true,"sniff_override_destination": false,"domain_strategy": "prefer_ipv4"},
+		{ type: 'tun', tag: 'tun-in', "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"], "mtu": 1400, auto_route: true, strict_route: true, stack: 'gvisor', sniff: true, "sniff_override_destination": false, "domain_strategy": "prefer_ipv4"},
 	        {
 	              type: "mixed",
 	              listen: "::",

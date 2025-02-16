@@ -556,19 +556,24 @@ export const SING_BOX_CONFIG = {
 		detour: 'DIRECT'
 	},
 	inbounds: [
-		{ type: 'tun', tag: 'tun-in', "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"], "mtu": 1400, auto_route: true, strict_route: true, stack: 'gvisor', sniff: true, "sniff_override_destination": false, "domain_strategy": "prefer_ipv4"},
 	        {
-	              type: "mixed",
-	              listen: "::",
-	              listen_port: 7890,
-	              tcp_fast_open: false,
-	              tcp_multi_path: false,
-	              udp_fragment: false,
-	              sniff: true,
-	              sniff_override_destination: false,
-	              domain_strategy: 'prefer_ipv4',
-	              set_system_proxy: false
-               }
+	            "type": "tun",
+	            "tag": "tun-in",
+	            "address": [
+	                "172.19.0.1/30",
+	                "fdfe:dcba:9876::1/126"
+	            ],
+	            "mtu": 1360,
+	            "auto_route": true,
+	            "strict_route": true,
+	            "stack": "gvisor"
+	        },
+	        {
+	            "type": "mixed",
+	            "tag": "mixed-in",
+	            "listen": "::",
+	            "listen_port": 7890
+	        }
 	],
 	outbounds: [
 		{ type: 'direct', tag: 'DIRECT' }

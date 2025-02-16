@@ -38,7 +38,7 @@ export class ConfigBuilder extends BaseConfigBuilder {
             interrupt_exist_connections: false
         });
 
-        proxyList.unshift('DIRECT', 'REJECT', '⚡ 自动选择');
+        proxyList.unshift('DIRECT', '⚡ 自动选择');
         outbounds.unshift('🚀 节点选择','GLOBAL');
         
         outbounds.forEach(outbound => {
@@ -98,7 +98,28 @@ export class ConfigBuilder extends BaseConfigBuilder {
         }));
         // Add any default rules that should always be present
         this.config.route.rules.unshift(
-            { protocol: 'dns', outbound: 'dns-out' },
+            {
+                "inbound": "mixed-in",
+                "action": "sniff"
+            },
+            {
+                "inbound": "tun-in",
+                "action": "sniff"
+            },
+            {
+                "inbound": "mixed-in",
+                "action": "resolve",
+                "strategy": "prefer_ipv4"
+            },
+            {
+                "inbound": "tun-in",
+                "action": "resolve",
+                "strategy": "prefer_ipv4"
+            },
+            {
+                "protocol": "dns",
+                "action": "hijack-dns"
+            },
             { clash_mode: 'direct', outbound: 'DIRECT' },
             { clash_mode: 'global', outbound: 'GLOBAL' },
             {
@@ -112,14 +133,14 @@ export class ConfigBuilder extends BaseConfigBuilder {
     				"rule_set": "geolocation-!cn"
     			    }
 			     ],
-			     "outbound": "REJECT"
+			     "action": "reject"
             },
             {
                 "domain_suffix": [
                     ".v1d.szbdyd.com",
                     ".mcdn.bilivideo.cn"
                 ],
-                "outbound": "REJECT"
+                "action": "reject"
             }
         );
 
